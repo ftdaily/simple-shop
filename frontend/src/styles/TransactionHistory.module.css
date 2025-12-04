@@ -5,7 +5,7 @@
 }
 
 .container h2 {
-  color: #e0e0e0;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 2rem 0;
@@ -15,7 +15,7 @@
 .loading {
   text-align: center;
   padding: 3rem;
-  color: #e0e0e0;
+  color: #ffffff;
   background: rgba(42, 42, 42, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 16px;
@@ -39,12 +39,12 @@
 .emptyState p {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #e0e0e0;
+  color: #ffffff;
   margin: 0 0 0.5rem 0;
 }
 
 .emptyState small {
-  color: #888;
+  color: #999999;
   font-size: 1rem;
 }
 
@@ -67,7 +67,7 @@
 .transactionCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  border-color: rgba(102, 126, 234, 0.3);
+  border-color: rgba(75, 85, 99, 0.3);
 }
 
 .transactionHeader {
@@ -81,14 +81,14 @@
 
 .transactionInfo h3 {
   margin: 0 0 0.5rem 0;
-  color: #e0e0e0;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .transactionInfo p {
   margin: 0.25rem 0;
-  color: #aaa;
+  color: #cccccc;
   font-size: 0.875rem;
 }
 
@@ -114,8 +114,8 @@
 }
 
 .paymentMethod {
-  background: rgba(102, 126, 234, 0.2);
-  color: #a5b4fc;
+  background: rgba(75, 85, 99, 0.2);
+  color: #9ca3af;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.75rem;

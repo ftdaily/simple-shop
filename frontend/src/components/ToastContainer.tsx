@@ -10,10 +10,10 @@ export default function ToastContainer() {
         <div key={toast.id} className={`${styles.toast} ${styles[toast.type]}`}>
           <div className={styles.content}>
             <span className={styles.icon}>
-              {toast.type === 'success' && '✓'}
-              {toast.type === 'error' && '✗'}
-              {toast.type === 'warning' && '!'}
-              {toast.type === 'info' && 'i'}
+              {toast.type === 'success' && 'OK'}
+              {toast.type === 'error' && 'ERR'}
+              {toast.type === 'warning' && 'WARN'}
+              {toast.type === 'info' && 'INFO'}
             </span>
             <p>{toast.message}</p>
           </div>

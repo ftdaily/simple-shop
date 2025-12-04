@@ -58,7 +58,7 @@ export default function AuthForm({ onClose }: AuthFormProps) {
         <div className={styles.authHeader}>
           <h2>{isLogin ? 'Masuk' : 'Daftar Akun'}</h2>
           {onClose && (
-            <button onClick={onClose} className={styles.closeButton}>×</button>
+            <button onClick={onClose} className={styles.closeButton}>X</button>
           )}
         </div>
         

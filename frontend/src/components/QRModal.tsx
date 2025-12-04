@@ -40,7 +40,7 @@ export default function QRModal({ qrCode, total, onClose, onPaymentComplete }: Q
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
           <h3>QRIS Payment</h3>
-          <button onClick={onClose} className={styles.closeButton}>×</button>
+          <button onClick={onClose} className={styles.closeButton}>X</button>
         </div>
 
         <div className={styles.paymentInfo}>
@@ -63,7 +63,7 @@ export default function QRModal({ qrCode, total, onClose, onPaymentComplete }: Q
             </div>
           ) : isCompleting ? (
             <div className={styles.completing}>
-              <div className={styles.successIcon}>✓</div>
+              <div className={styles.successIcon}>OK</div>
               <p>Pembayaran berhasil!</p>
             </div>
           ) : null}

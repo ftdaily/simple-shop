@@ -188,7 +188,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
                   {product.image_url ? (
                     <img src={product.image_url} alt={product.name} />
                   ) : (
-                    <div className={styles.noImage}>📦</div>
+                    <div className={styles.noImage}>BOX</div>
                   )}
                 </div>
                 <div className={styles.productInfo}>
@@ -205,7 +205,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
                     className={styles.addToCartButton}
                     disabled={product.stock === 0}
                   >
-                    🛒 Tambah ke Keranjang
+                    Tambah ke Keranjang
                   </button>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
 
         <div className={styles.cartSection}>
           <div className={styles.cartHeader}>
-            <h3>🛍️ Keranjang Belanja</h3>
+            <h3>Keranjang Belanja</h3>
             <span className={styles.cartCount}>({cart.length})</span>
           </div>
           
@@ -238,7 +238,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
                         onClick={() => updateCartQuantity(item.product.id, item.quantity - 1)}
                         className={styles.quantityButton}
                       >
-                        −
+                        -
                       </button>
                       <span className={styles.quantity}>{item.quantity}</span>
                       <button
@@ -251,7 +251,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
                         onClick={() => removeFromCart(item.product.id)}
                         className={styles.removeButton}
                       >
-                        🗑️
+                        Hapus
                       </button>
                     </div>
                     <div className={styles.itemTotal}>
@@ -270,7 +270,7 @@ export default function Shop({ products, onTransactionComplete }: ShopProps) {
                   className={styles.checkoutButton}
                   disabled={loading}
                 >
-                  {loading ? 'Processing...' : '💳 Checkout'}
+                  {loading ? 'Processing...' : 'Checkout'}
                 </button>
               </div>
             </>

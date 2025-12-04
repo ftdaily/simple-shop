@@ -22,7 +22,7 @@ export default function PaymentModal({ total, onPayment, onClose }: PaymentModal
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
           <h3>Payment Method Selection</h3>
-          <button onClick={onClose} className={styles.closeButton}>×</button>
+          <button onClick={onClose} className={styles.closeButton}>X</button>
         </div>
         
         <div className={styles.totalSection}>
@@ -42,7 +42,7 @@ export default function PaymentModal({ total, onPayment, onClose }: PaymentModal
                 onChange={(e) => setSelectedMethod(e.target.value)}
               />
               <div className={styles.paymentInfo}>
-                <div className={styles.paymentIcon}>□</div>
+                <div className={styles.paymentIcon}>QR</div>
                 <div className={styles.paymentDetails}>
                   <h4>QRIS</h4>
                   <p>Bayar dengan scan QR Code</p>
@@ -74,7 +74,7 @@ export default function PaymentModal({ total, onPayment, onClose }: PaymentModal
 
         {selectedMethod === 'qris' && (
           <div className={styles.qrisInfo}>
-            <div className={styles.qrisIcon}>↻</div>
+            <div className={styles.qrisIcon}>QRIS</div>
             <p>Setelah checkout, Anda akan mendapatkan QR Code untuk melakukan pembayaran melalui aplikasi e-wallet atau mobile banking.</p>
           </div>
         )}

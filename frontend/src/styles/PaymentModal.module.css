@@ -51,7 +51,7 @@
   align-items: center;
   padding: 1.5rem 2rem;
   border-bottom: 2px solid #f1f5f9;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4b5563, #374151);
   color: white;
   border-radius: 20px 20px 0 0;
 }
@@ -90,7 +90,7 @@
 
 .totalAmount {
   font-size: 2rem;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .totalAmount strong {
@@ -114,8 +114,8 @@
 }
 
 .paymentOption:hover {
-  border-color: #667eea;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+  border-color: #4b5563;
+  box-shadow: 0 8px 25px rgba(75, 85, 99, 0.2);
 }
 
 .paymentLabel {
@@ -130,7 +130,7 @@
 }
 
 .paymentLabel input[type="radio"]:checked + .paymentInfo {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4b5563, #374151);
   color: white;
 }
 
@@ -140,18 +140,21 @@
   gap: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 .paymentIcon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(102, 126, 234, 0.1);
+  background: linear-gradient(135deg, #4b5563, #374151);
   border-radius: 12px;
   transition: all 0.3s ease;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .paymentLabel input[type="radio"]:checked + .paymentInfo .paymentIcon {
@@ -166,13 +169,13 @@
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 .paymentDetails p {
   margin: 0 0 0.5rem 0;
   opacity: 0.8;
-  color: #aaa;
+  color: #cccccc;
 }
 
 .recommended {
@@ -199,17 +202,25 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #4b5563;
 }
 
 .qrisIcon {
-  font-size: 2rem;
-  color: #60a5fa;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4b5563, #374151);
+  border-radius: 8px;
 }
 
 .qrisInfo p {
   margin: 0;
-  color: #bbb;
+  color: #cccccc;
   line-height: 1.5;
 }
 
@@ -226,7 +237,7 @@
   border: 2px solid #444;
   border-radius: 12px;
   background: #333;
-  color: #b0b0b0;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
